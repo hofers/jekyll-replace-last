@@ -14,7 +14,7 @@ gem install jekyll-replace-last
 {{ content | replace_last: " ", "&nbsp;" }}
 ```
 
-`Gemfile`
+in `Gemfile`
 ```
 ...
 group :jekyll_plugins do
@@ -22,7 +22,7 @@ group :jekyll_plugins do
   gem 'jekyll-replace-last'
 ```
 
-`_config.yml`
+in `_config.yml`
 ```
 ...
 plugins:
