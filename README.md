@@ -1,4 +1,4 @@
-# Jekyll Replace Last
+# [Jekyll Replace Last](https://rubygems.org/gems/jekyll-replace-last)
 
 A straightforward Jekyll filter plugin that can be used to replace the last occurrence of a substring within a string. Functional counterpart to `replace_first`.
 
