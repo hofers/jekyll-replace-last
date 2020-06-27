@@ -6,11 +6,12 @@ A straightforward Jekyll filter plugin that can be used to replace the last occu
 Equivalent to:
 ```
 # when:
-# content = "hello world"
+# content = "hello hello world"
 # str_to_replace = "hello".reverse
 # replacement = "hi".reverse
 
 {{ content | split: "" | reverse | join: "" | replace_first: str_to_replace, replacement | split: "" | reverse}}
+=> hello hi world
 ```
 
 ## Installation
