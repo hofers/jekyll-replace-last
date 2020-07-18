@@ -10,7 +10,7 @@ Equivalent to:
 # str_to_replace = "hello".reverse
 # replacement = "hi".reverse
 
-{{ content | split: "" | reverse | join: "" | replace_first: str_to_replace, replacement | split: "" | reverse }}
+{{ content | split: "" | reverse | join: "" | replace_first: str_to_replace, replacement | split: "" | reverse | join: "" }}
 => hello hi world
 ```
 
@@ -23,7 +23,8 @@ gem install jekyll-replace-last
 
 ### Jekyll:
 ``` ruby
-{{ content | replace_last: " ", "&nbsp;" }}
+{{ "hello hello world" | replace_last: "hello", "hi" }}
+=> hello hi world
 ```
 
 in `Gemfile`
